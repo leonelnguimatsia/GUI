@@ -1,0 +1,42 @@
+/*****************************************************************
+ * Autor: Leonel Nguimatsia                                      *
+ * @version: Code-block Version 20.03                            *
+ * Hochschule: TH-Kloen                                          *
+ * Ort: Deutz Technische Hochschule                              *
+ * Webmail: leonel.nguimatsia_tsobguim@smail.th-koeln.de         *
+ * Beschreibung: EntitaetKlasse ressource-Datei                  *
+ *                                                               *
+ *****************************************************************/
+
+#include <windows.h>
+
+SimpelMenu MENU          //Definition der Menu fuer das Hauptfenster
+{
+
+    POPUP "&Datei"              //Menu POP-Fenster mit dem Name "Datei"
+    {
+        MENUITEM "&Quadrat_Eigenschaften", 10  // MenuItem mit dem Name "Quadrat_Eigenschaften" und mit der ID = 10
+
+    }
+       MENUITEM "&Schlieﬂen",  20    // MenuItem mit dem Name "Schlieﬂen" und  mit der ID = 20
+
+}
+
+//Definition der DialogFenster mit dem Name"UMRECHNUNG" fuer "Quadrat_Eigenschaften"
+UMRECHNUNG DIALOG DISCARDABLE 44,47,186,126
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Umrechnung"
+FONT 8, "Helv"
+BEGIN
+
+    LTEXT                 "Seite eingeben:",200,18,10,55,13  //Label "Seite eingeben" zur Erlaeuterung der Editbox und mit der ID = 200
+    EDITTEXT              100,79,9,56,12                     //Editbox fuer die"Seite eingeben" und mit der ID = 100
+    LTEXT                 "Winkel eingeben:",201,18,30,55,13 //Label "Winekl" zur Erlaeuterung der Editbox und mit der ID = 200
+    EDITTEXT              101,79,29,56,12                    //EditBox fuer "Winkel" zur Erlaeuterung der Editbox und mit der ID = 101
+    SCROLLBAR             120,79,59,56,10                    //ScrollBar zum Einstellen der Winkel und mit der ID = 120
+    LTEXT                 "Winkel Einstellen",205,18,60,55,13 //Label "Winkel Einstellen" zur Erlaeuterung ScrollBar zum Einstellen der Winkel und mit der ID = 205
+    DEFPUSHBUTTON         "Umrechnen",IDOK,34,83,40,14       //Button "Umrechen" beim Bestaetigen und mit der ID = 34
+    PUSHBUTTON            "Schlieﬂen",IDCANCEL,110,83,53,14  //Button "Schlieﬂen" beim Schlieﬂen der DialogFenster und mit dem ID = 110
+END
+
+

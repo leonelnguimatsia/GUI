@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1647354990 source:c:\users\leone\desktop\wss_2021\gui\gui_winapi_c_\quadratdarstellen\ressource.rc
+	<windows.h>
+
+1647495235 source:c:\users\leone\desktop\wss_2021\gui\gui_winapi_c_\quadratdarstellen\main.cpp
+	<windows.h>
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	"ressource.h"
+
+1647354971 c:\users\leone\desktop\wss_2021\gui\gui_winapi_c_\quadratdarstellen\ressource.h
+
